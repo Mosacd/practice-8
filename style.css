@@ -1,0 +1,185 @@
+html{
+    font-size: 13px;
+    font-family: 'Manrope';
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-color:hsl(210, 46%, 95%);
+    padding: 0px 25px;
+  }
+
+  #wrapper{
+    width: auto;
+    display: grid;
+    margin: 75px auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 5px 20px -10px hsl(214, 17%, 51%);
+    z-index: 1;
+    max-width: 425px;
+  }
+
+  #drawers{
+  width: 100%;
+  aspect-ratio: 5/3;
+  }
+  
+  article{
+    padding: 40px 30px 0px 30px;
+    position: relative;
+  }
+  
+  h1{
+    color: hsl(217, 19%, 35%);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+
+  p{
+    font-weight: 500;
+    color: hsl(214, 17%, 51%);
+    padding-right: 10px;
+    line-height: 1.5;
+    font-size: 0.99rem;
+    margin-bottom: 15px;
+  }
+
+  #michellPic{
+    height: 3.1rem;
+    border-radius: 100%;
+  }
+
+  #profileDiv{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 15px 30px 15px 30px;
+    transition: all 300ms;
+    position: relative;
+  }
+
+  .classforcolorchange{
+    background-color: hsl(217, 19%, 35%);
+  }
+
+  h2,h3{
+    font-size: 0.99rem;
+  }
+
+  h2{
+    color: hsl(217, 19%, 35%);
+    margin-bottom: 2px;
+    font-weight: 700;
+  }
+
+  h3{
+    color: hsl(212, 23%, 69%);
+    font-weight: 500;
+  }
+
+  #shareButton{
+    border: none;
+    background-color:hsl(210, 46%, 95%);
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    cursor: pointer;
+    z-index: 2;
+    transition: all 300ms;
+  }
+
+  #sharedata{
+    display: flex;
+    visibility:hidden;
+    position: absolute;
+    gap: 17px;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms;
+  }
+
+  #sharedata h4{
+    font-size: 1rem;
+    font-weight:500;
+    letter-spacing: 5px;
+    color: hsl(212, 23%, 69%);
+  }
+
+  #shareSvg{
+    transition: all 300ms;
+  }
+
+  svg{
+    cursor: pointer;
+  }
+
+  .classforsharedata{
+    background-color: hsl(217, 19%, 35%);
+  }
+
+  @media screen and (min-width:1000px){
+    
+    #wrapper{
+      margin: 250px auto;
+      grid-template-columns: 1fr 1.5fr;
+      grid-template-rows: 1fr;
+      max-width: 750px;
+      overflow: visible;
+    }
+
+    img{
+      height: 100%;
+      border-top-left-radius: inherit;
+      border-bottom-left-radius: inherit;
+    }
+
+    h1{
+      font-size: 1.6rem;
+      line-height: 1.3;
+    }
+
+    p{
+      margin-bottom: 0px;
+      font-size: 1.02rem;
+    }
+
+    #profileDiv{
+  padding: 20px 40px 30px 40px;
+    }
+
+    article{
+     padding-left: 40px;
+    }
+
+    #sharedata{
+        padding: 15px 30px 15px 30px;
+        border-radius: 10px;
+        right: -62px;
+        top: -55px;
+        z-index: 2;
+    }
+
+    #triangle {
+        position: absolute;
+        bottom: -12px;
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 15px solid hsl(217, 19%, 35%);
+        transition: all 200ms;
+        opacity: 0;
+    }
+  }
